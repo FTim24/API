@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton API - Calculadora Matemática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Calculadora Newton API</h1>
+        <p>Processamento matemático simbólico direto no navegador</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Escolha a operação</h2>
+            <select id="operationInput">
+                <option value="">Selecione...</option>
+                <option value="simplify">Simplificar</option>
+                <option value="factor">Fatorar</option>
+                <option value="derive">Derivar</option>
+                <option value="integrate">Integrar</option>
+                <option value="zeros">Encontrar Zeros</option>
+                <option value="tangent">Tangente</option>
+                <option value="area">Área sob a curva</option>
+                <option value="sin">Seno</option>
+                <option value="cos">Cosseno</option>
+                <option value="tan">Tangente</option>
+                <option value="arcsin">Arcsin</option>
+                <option value="arccos">Arccos</option>
+                <option value="arctan">Arctan</option>
+                <option value="abs">Absoluto</option>
+                <option value="log">Logaritmo</option>
+            </select>
+
+            <h2>Digite a expressão</h2>
+            <input type="text" id="expressionInput" placeholder="Ex: x^2+2x, pi, 2:4|x^3, 2|8">
+
+            <button id="btnCalc">Calcular</button>
+        </section>
+
+        <section class="card output-card">
+            <h2>Resultado</h2>
+            <div id="output">Aguardando operação...</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto desenvolvido com a Newton API • Microsserviço matemático simbólico</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
